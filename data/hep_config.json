@@ -1,0 +1,44 @@
+{
+    "slac_yp_1969": {
+        "doi": "10.17182/hepdata.3394.v1",
+        "parser": "slac_yp_1969",
+        "diagnostics": "slac_yp_1969"
+    },
+
+    "harvard_ep_1977" : {
+        "doi": "10.17182/hepdata.24604.v1",
+        "parser": "harvard_ep_1977",
+        "diagnostics": null
+    },
+
+    "cornell_ep_1977": {
+        "doi": "10.17182/hepdata.24615.v1",
+        "parser": null,
+        "diagnostics": null
+    },
+
+    "clas_ep_2007" : {
+        "doi": "10.17182/hepdata.4994.v1",
+        "parser": "clas_ep_2007",
+        "diagnostics": "clas_ep_2007"
+    },
+
+    "halla_ep_2010" : {
+        "doi": "10.17182/hepdata.54197.v1",
+        "parser": null,
+        "diagnostics": null
+    },
+
+    "clas_yp_2010" : {
+        "doi": "10.17182/hepdata.54967.v1",
+        "parser": null,
+        "diagnostics": null
+    },
+
+    "bonn_yp_1970" : {
+        "doi": "10.17182/hepdata.16698.v1",
+        "parser": "bonn_yp_1970",
+        "diagnostics": null
+    }
+
+}
