@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ep-data"
+version = "0.1.0"
+description = "Configuration-driven retrieval and custom parsing of HEPData submissions"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "requests>=2.31",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+download_data = "ep_data.cli:main"
+plot_diagnostics = "ep_data.diagnostics.runner:main"
+
+[dependency-groups]
+dev = [
+    "black>=25.0",
+    "pytest>=8.0",
+    "ruff>=0.8",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ep_data"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["network: tests requiring access to HEPData"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
